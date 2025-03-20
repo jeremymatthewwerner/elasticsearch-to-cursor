@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug Elasticsearch",
+      "request": "launch",
+      "mainClass": "org.elasticsearch.bootstrap.Elasticsearch",
+      "projectName": "elasticsearch",
+      "args": [],
+      "vmArgs": [
+        "-ea",
+        "-Djava.security.manager=allow",
+        "-Djava.locale.providers=CLDR",
+        "-Dtests.testfeatures.enabled=true",
+        "-Des.nativelibs.path=${workspaceFolder}/libs/native",
+        "--add-opens=java.base/java.security.cert=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.channels=ALL-UNNAMED",
+        "--add-opens=java.base/java.io=ALL-UNNAMED",
+        "--add-opens=java.base/java.net=ALL-UNNAMED",
+        "--add-opens=java.base/javax.net.ssl=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.file=ALL-UNNAMED",
+        "--add-opens=java.base/java.time=ALL-UNNAMED",
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "--add-opens=java.management/java.lang.management=ALL-UNNAMED"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Debug JUnit Test",
+      "request": "launch",
+      "mainClass": "",
+      "projectName": "elasticsearch",
+      "vmArgs": [
+        "-ea",
+        "-Djava.security.manager=allow",
+        "-Djava.locale.providers=CLDR",
+        "-Dtests.testfeatures.enabled=true",
+        "-Des.nativelibs.path=${workspaceFolder}/libs/native",
+        "--add-opens=java.base/java.security.cert=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.channels=ALL-UNNAMED",
+        "--add-opens=java.base/java.io=ALL-UNNAMED",
+        "--add-opens=java.base/java.net=ALL-UNNAMED",
+        "--add-opens=java.base/javax.net.ssl=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.file=ALL-UNNAMED",
+        "--add-opens=java.base/java.time=ALL-UNNAMED",
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "--add-opens=java.management/java.lang.management=ALL-UNNAMED"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+      "default": true
+    }
+  ],
+  "java.import.gradle.enabled": true,
+  "java.import.gradle.wrapper.enabled": true,
+  "java.import.gradle.version": "wrapper",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.enabled": true,
+  "editor.formatOnSave": true,
+  "java.completion.enabled": true,
+  "java.completion.guessMethodArguments": true,
+  "java.codeGeneration.generateComments": true,
+  "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+  "java.codeGeneration.toString.codeStyle": "STRING_BUILDER",
+  "java.codeGeneration.toString.skipNullValues": true,
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.test.config": {
+    "vmArgs": [
+      "-ea",
+      "-Djava.security.manager=allow",
+      "-Djava.locale.providers=CLDR",
+      "-Dtests.testfeatures.enabled=true"
+    ]
+  }
+}
