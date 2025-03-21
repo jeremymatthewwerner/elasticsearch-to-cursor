@@ -1,5 +1,7 @@
 # Elasticsearch Project - Cursor Conversion
 
+This repo started as the result of this task run at Manus: https://manus.im/share/rFulBWSu19dygQa5OW93MJ?replay=1
+
 This repository contains a conversion of the Elasticsearch project from IntelliJ IDEA to Cursor development environment, along with bug analysis and fixes.
 
 ## Repository Structure
